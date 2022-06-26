@@ -48,39 +48,38 @@ footer {
 nav ul li a {
     text-decoration: none;
     color: #242e52;
-    padding: 0 1.75em;
+    padding: 0 1.75rem;
     font-weight: 500;
-    font-size: 0.81em;
+    font-size: 0.81rem;
 }
 
 .logo{
-    width: 9em;
-    height: 1.5em;
+    width: 9rem;
+    height: 1.5rem;
 }
 
 .botonNaranja {
-    background-color: rgb(242, 95, 58);
-    width: 8.37em;
-    height: 2.75em;
-    border-radius: 3em;
+    background-color: var(--rojoBrillante);
+    width: 6.37rem;
+    height: 2rem;
+    border-radius: 2rem;
     color: var(--varianteGrisClaro);
     border: none;
-    box-shadow: 0px 4px 7px rgba (o, 0, 0, 0.25);
+    box-shadow: 0px 4px 7px;
 }
 
 .botonContador {
-    background-color: rgb(242, 95, 58);
-    width: 4.31rem;
-    height: 2.68rem;
+    background-color: var(--rojoBrillante);
+    width: 3.31rem;
+    height: 2rem;
     border-radius: 1.875rem;
     color: var(--varianteGrisClaro);
     border: none;
-    box-shadow: 0px 4px 7px rgba (o, 0, 0, 0.25);
+    box-shadow: 0px 4px 7px;
 }
 
 .primerSeccion{
     display: flex;
-    /* justify-content: space-between; */
     gap: 6em;
     text-align: left;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem;
@@ -121,7 +120,41 @@ nav ul li a {
     margin-right: 6em;
 }
 
-.terceraSeccion{
+.terceraSeccion div{
+    display: flex;
+    gap: 7em;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.cards img{
+    width: 70px;
+    height: 70px;
+}
+
+.terceraSeccion h2{
+    text-align: center;
+}
+
+.buttonCards{
+    display: flex;
+    justify-content: center;
+}
+
+.getStartedTestimonio{
+    background-color: rgb(242, 95, 58);
+    width: 8.37em;
+    height: 2.75em;
+    border-radius: 3em;
+    color: var(--varianteGrisClaro);
+    border: none;
+    box-shadow: 0px 4px 7px rgba (o, 0, 0, 0.25);
 }
 
 h1{
@@ -156,13 +189,29 @@ h3{
 }
 
 
-.graficas {}
-
 .manage {
     text-align: left;
     font-size: 1.03rem;
 }
 
+.seccionNaranja{
+    background-color: var(--rojoBrillante);
+    height: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botonBlanco{
+    background-color:  #FFFFFF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    width: 8.37em;
+    height: 2.75em;
+    border-radius: 3rem;
+    color: #F3603B;
+    border: none;
+
+}
 footer{
     display: flex;
     padding: 4.69rem 9.12rem 4.69rem 10.31rem;
