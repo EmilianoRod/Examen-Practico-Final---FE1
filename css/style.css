@@ -21,12 +21,16 @@ body {
     background-image: url("/img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: 62.5rem -12.5rem;
+    min-width: 10rem;
+
 }
 
 main {
     background-image: url("/img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: -31.25rem 62.5rem;
+    min-width: 10rem;
+
 }
 
 header {
@@ -35,6 +39,12 @@ header {
     align-items: center;
     margin-bottom: 4.69rem;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem;
+    min-width: 10rem;
+}
+
+/* Hamburguesa */
+.fa-solid{
+    display: none;
 }
 
 nav ul {
@@ -57,8 +67,8 @@ nav ul li a {
     font-size: 0.81rem;
 }
 
-a.active,a:hover{
-    opacity: 60%;
+nav a:hover{
+    opacity: 40%;
     transition: .5s;
 }
 
@@ -104,10 +114,17 @@ a.active,a:hover{
     gap: 6em;
     text-align: left;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem;
+    min-width: 10rem;
+    flex-wrap: wrap;
 }
 
 .fraseNosotros{
     padding-top: 5rem;
+    min-width: 10rem;
+}
+
+.graficas{
+    min-width: 10rem;
 }
 
 .primerSeccion p {
@@ -325,7 +342,40 @@ footer{
 }
 
 @media (max-width: 400px){
-    header{
-        background-color: #242e52;
+    nav{
+        display: none;
     }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 0 5rem;
+        padding-top: 2rem;
+        width: 100vw;
+    }
+    header .fa-solid{
+        display: block;
+    }
+    header button{
+        display: none;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .primerSeccion{
+        gap: 0;
+        text-align: center;
+        margin: 0;
+    }
+    .primerSeccion .fraseNosotros{
+        order: 1;
+    }
+    
+
+
 }
