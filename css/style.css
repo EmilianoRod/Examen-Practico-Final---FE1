@@ -12,6 +12,9 @@
     --azulMuyOscuro: rgb(29, 30, 37);
     --rojoMuyPálido: rgb(255, 239, 234);
     --varianteGrisClaro: rgb(249, 249, 249);
+    --gris: rgba(140, 140, 148, 1);
+    --negro: rgba(0, 0, 0, 1);
+
 }
 
 body {
@@ -39,10 +42,11 @@ nav ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    float: right
 }
 
-footer {
-    background-color: #000;
+nav ul li{
+    display: inline-block;
 }
 
 nav ul li a {
@@ -53,6 +57,12 @@ nav ul li a {
     font-size: 0.81rem;
 }
 
+a.active,a:hover{
+    opacity: 60%;
+    transition: .5s;
+}
+
+
 .logo{
     width: 9rem;
     height: 1.5rem;
@@ -60,12 +70,22 @@ nav ul li a {
 
 .botonNaranja {
     background-color: var(--rojoBrillante);
-    width: 6.37rem;
-    height: 2rem;
-    border-radius: 2rem;
+    width: 8.375rem;
+    height: 2.75rem;
+    border-radius: 3.125rem;
     color: var(--varianteGrisClaro);
     border: none;
     box-shadow: 0px 4px 7px;
+}
+
+.botonBlanco{
+    background-color: var(--varianteGrisClaro);
+    box-shadow: 0px 4px 7px;
+    width: 8.375rem;
+    height: 2.75rem;
+    border-radius: 3.125rem;
+    color: var(--rojoBrillante);
+    border: none;
 }
 
 .botonContador {
@@ -75,7 +95,8 @@ nav ul li a {
     border-radius: 1.875rem;
     color: var(--varianteGrisClaro);
     border: none;
-    box-shadow: 0px 4px 7px;
+    padding: 0.4rem;
+    text-align: center;
 }
 
 .primerSeccion{
@@ -85,6 +106,19 @@ nav ul li a {
     margin: 4.69rem 9.12rem 4.69rem 10.31rem;
 }
 
+.fraseNosotros{
+    padding-top: 5rem;
+}
+
+.primerSeccion p {
+    font-weight: 500;
+    font-size: 1.03rem;
+    margin: 1.75rem 0px;
+    line-height: 157.1%;
+    width: 23.125rem;
+    text-align: justify;
+    color: var(--negro);
+}
 
 .numeradores{
     display: flex;
@@ -116,13 +150,32 @@ nav ul li a {
     width: 433px;
 }
 
-.segundaSeccion .articuloPrincipal p{
-    margin-right: 6em;
+.segundaSeccion p{
+    color: var(--azulGrisáceoOscuro)
 }
 
+
+.segundaSeccion .articuloPrincipal p{
+    margin-right: 6em;
+    color: var(--negro);
+}
+
+.terceraSeccion{
+    margin: 10rem 0rem 10rem 0rem;
+}
+
+.terceraSeccion h2{
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
 .terceraSeccion div{
     display: flex;
     gap: 7em;
+    padding: 0rem 5rem 0rem 5rem;
 }
 
 .cards{
@@ -142,19 +195,14 @@ nav ul li a {
     text-align: center;
 }
 
+.cards p{
+    color: var(--azulGrisáceoOscuro);
+}
+
 .buttonCards{
     display: flex;
     justify-content: center;
-}
-
-.getStartedTestimonio{
-    background-color: rgb(242, 95, 58);
-    width: 8.37em;
-    height: 2.75em;
-    border-radius: 3em;
-    color: var(--varianteGrisClaro);
-    border: none;
-    box-shadow: 0px 4px 7px rgba (o, 0, 0, 0.25);
+    margin-top: 4rem;
 }
 
 h1{
@@ -163,8 +211,8 @@ h1{
     font-weight: 700;
     letter-spacing: -0.035em;
     color: var(--azulOscuro);
+    line-height: 4.125rem;
 }
-
 
 h2{
     color: rgba(35, 44, 80, 1);
@@ -172,20 +220,6 @@ h2{
 
 h3{
     color: rgba(35, 44, 80, 1);
-}
-
-.primerSeccion p {
-    font-weight: 500;
-    font-size: 1.03rem;
-    margin: 1.75rem 0px;
-    line-height: 157.1%;
-    width: 23.125rem;
-    color: var(--azulGrisáceoOscuro);
-    text-align: justify;
-}
-
-.segundaSeccion p{
-    color: var(--azulGrisáceoOscuro)
 }
 
 
@@ -196,23 +230,86 @@ h3{
 
 .seccionNaranja{
     background-color: var(--rojoBrillante);
-    height: 224px;
+    height:  14rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:  0rem 10.5rem 0rem 10.5rem;
 }
 
-.botonBlanco{
-    background-color:  #FFFFFF;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    width: 8.37em;
-    height: 2.75em;
-    border-radius: 3rem;
-    color: #F3603B;
-    border: none;
-
+.seccionNaranja h2{
+    color: var(--varianteGrisClaro);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.005em;
+    text-align: left;
+    width: 30rem;
+    height: 6rem;
 }
+
 footer{
+    background-color: var(--azulMuyOscuro);
     display: flex;
+    /* gap: 25rem; */
+    justify-content: space-around;
+    height: 15.4375rem;
     padding: 4.69rem 9.12rem 4.69rem 10.31rem;
+}
+
+.logoyRedes{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.redesSociales{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.navBarFooter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 392.73px;
+    height: 141.14px;
+    padding-bottom: 1rem;
+}
+
+.navBarFooter li{
+    line-height: 2;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.navBarFooter li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-left: 13rem;
+}
+.formulario p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--gris);
+    height: 1.25rem;
+    width: 20rem;
+    padding-left: 2.5rem;
+}
+
+@media (max-width: 400px){
+    header{
+        background-color: #242e52;
+    }
 }
