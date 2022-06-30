@@ -3,6 +3,7 @@
 * {
     font-family: 'Be Vietnam Pro', sans-serif;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -21,16 +22,12 @@ body {
     background-image: url("/img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: 62.5rem -12.5rem;
-    min-width: 10rem;
-
 }
 
 main {
     background-image: url("/img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: -31.25rem 62.5rem;
-    min-width: 10rem;
-
 }
 
 header {
@@ -39,7 +36,7 @@ header {
     align-items: center;
     margin-bottom: 4.69rem;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem;
-    min-width: 10rem;
+    /* min-width: 10rem; */
 }
 
 /* Hamburguesa */
@@ -114,17 +111,19 @@ nav a:hover{
     gap: 6em;
     text-align: left;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem;
-    min-width: 10rem;
+    /* min-width: 1rem; */
     flex-wrap: wrap;
 }
 
 .fraseNosotros{
     padding-top: 5rem;
-    min-width: 10rem;
+    min-width: 14rem;
 }
 
-.graficas{
-    min-width: 10rem;
+.graficas img{
+    max-width: 100%;
+    min-width: 22rem;
+    /* height: auto; */
 }
 
 .primerSeccion p {
@@ -329,7 +328,7 @@ footer{
     gap: 4rem;
     padding-left: 13rem;
 }
-.formulario p{
+.copyright{
     font-size: 13px;
     font-weight: 500;
     line-height: 18px;
@@ -341,17 +340,17 @@ footer{
     padding-left: 2.5rem;
 }
 
-@media (max-width: 400px){
+
+/* Responsiveeeeeeeee */
+@media (max-width: 770px){
     nav{
         display: none;
     }
     header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 0 0 5rem;
-        padding-top: 2rem;
-        width: 100vw;
+        margin: 0 0 0 0rem;
+        padding: 2rem 2rem 0rem 2rem;
+        width: 100%;
+        min-width: 290px;
     }
     header .fa-solid{
         display: block;
@@ -367,15 +366,230 @@ footer{
         margin: 0;
         padding: 0;
     }
-    .primerSeccion{
-        gap: 0;
-        text-align: center;
-        margin: 0;
-    }
     .primerSeccion .fraseNosotros{
         order: 1;
     }
+
+    h1{
+        margin: 0em;
+        padding: 0rem 1rem 0rem 1rem;
+        font-size: 3rem;
+        font-weight: 500;
+    }
     
+    .primerSeccion{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        margin-left: 2rem;
+        min-width: 10rem;
+        flex-wrap: wrap;
+    }
+    
+    .fraseNosotros{
+        padding-top: 1rem;
+        min-width: 10rem;
+    }
+    
+    .graficas{
+        min-width: 10rem;
+        margin: 0px;
+        padding: 0px
+
+    }    
+    
+    .primerSeccion p {
+        margin: 1rem 0rem 1.25rem 0rem;
+        line-height: 157.1%;
+        width: 23.125rem;
+        text-align: center;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    
+    .numeradores{
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+    }
+    
+    .lista{
+        margin-left: 0rem;
+        min-width: 290px;
+        max-width: 30vw;
+    }
+    
+    .parrafonumerador{
+        padding-left: 0rem;
+        color: var(--azulGrisáceoOscuro);
+    }
+    
+    .segundaSeccion{
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center; */
+        margin: 0rem 0rem 0rem 0rem;
+        min-width: 290px;
+        max-width: 30vw;
+        border: 0;
+
+    }
+
+
+
+    /* ASsiiiiiiiii: */
+    
+    .segundaSeccion h2{
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        min-width: 310px;
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    
+  
+    
+    .articuloPrincipal{
+        min-width: 290px;
+        width: 30vw;
+        text-align: center;
+        /* padding-left: 4rem; */
+    }
+
+    .articuloPrincipal p{
+        /* margin: 1rem 0rem 1.25rem 0rem;
+        padding: 0rem 1rem 0rem 1rem; */
+        min-width: 290px;
+        width: 30vw;
+        text-align: center;
+
+    }
+    
+    .terceraSeccion{
+        margin: 0rem 0rem 0rem 0rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .terceraSeccion h2{
+        text-align: center;
+    
+    }
+    .terceraSeccion div{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2em;
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    
+    /* .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #FAFAFA;
+    } */
+/*     
+    .cards img{
+        width: 70px;
+        height: 70px;
+    } */
+    
+
+    /* .manage {
+        text-align: left;
+        font-size: 1.03rem;
+    } */
+    
+    .seccionNaranja{
+        height:  35rem;
+        flex-direction: column;
+        align-items: center;
+        padding:  0rem 0rem 0rem 0rem;
+        max-width: 375px;
+    }
+    
+    .seccionNaranja h2{
+        line-height: 3rem;
+        letter-spacing: -0.005em;
+        text-align: center;
+        margin-top: 6rem;
+        width: 19rem;
+        height: 6rem;
+    }
+
+    .buttonCards{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        /* justify-content: space-around; */
+        height: 32rem;
+        padding: 0rem 0rem 0rem 0rem;
+        max-width: 375px;
+        justify-content: center;
+
+    }
+    
+    .logoyRedes{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .redesSociales{
+        display: flex;
+        gap: 1.8rem;
+    }
+    
+    .redesSociales i{
+        color: white;
+        font-size: 2.25rem;
+        
+    }
+    
+    .redesSociales i:hover{
+        color: var(--rojoBrillante);
+    }
+    
+    .navBarFooter{
+        height: 141.14px;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        padding-left:0rem;
+        max-width: 20vw
+    }
+    
+    
+    .navBarFooter li{
+        line-height: 2;
+        padding: 0rem 3rem 0rem 3rem;
+        max-width: 100%;
+    }
+    
+    .navBarFooter li a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding-left: 5rem;
+    }
+    .copyright{
+        text-align: center;
+        order: -1;
+        padding-top: 3rem;
+    }
 
 
 }
