@@ -343,13 +343,21 @@ footer{
 
 /* Responsiveeeeeeeee */
 @media (max-width: 770px){
+    html, body, main{
+        width: 100vw;
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-width: 290px;
+    }
     nav{
         display: none;
     }
     header{
-        margin: 0 0 0 0rem;
+        margin: 0;
         padding: 2rem 2rem 0rem 2rem;
-        width: 100%;
+        width: 100vw;
         min-width: 290px;
     }
     header .fa-solid{
@@ -358,17 +366,8 @@ footer{
     header button{
         display: none;
     }
-    main{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    .primerSeccion .fraseNosotros{
-        order: 1;
-    }
+
+
 
     h1{
         margin: 0em;
@@ -381,12 +380,15 @@ footer{
         flex-direction: column;
         gap: 0;
         text-align: center;
-        margin-left: 2rem;
-        min-width: 10rem;
+        margin: 1rem 0rem 0rem 0rem;
         flex-wrap: wrap;
+        min-width: 290px;
+        width: 100vw;
+        align-items: flex-end;
     }
     
     .fraseNosotros{
+        order: 1;
         padding-top: 1rem;
         min-width: 10rem;
     }
@@ -394,8 +396,7 @@ footer{
     .graficas{
         min-width: 10rem;
         margin: 0px;
-        padding: 0px
-
+        padding: 0px;
     }    
     
     .primerSeccion p {
@@ -426,44 +427,39 @@ footer{
     .segundaSeccion{
         flex-direction: column;
         flex-wrap: wrap;
-        /* justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center; */
-        margin: 0rem 0rem 0rem 0rem;
         min-width: 290px;
-        max-width: 30vw;
+        width: 100vw;
         border: 0;
-
-    }
-
-
-
-    /* ASsiiiiiiiii: */
-    
-    .segundaSeccion h2{
-        font-size: 2rem;
-        font-weight: 600;
+        gap: 0;
         text-align: center;
-        min-width: 310px;
-        padding: 0rem 3rem 0rem 3rem;
-    }
-    
-  
+        margin: 1rem 0rem 0rem 0rem;
+        align-items: flex-end;
+
+    }  
     
     .articuloPrincipal{
         min-width: 290px;
-        width: 30vw;
+        width: 100%;
         text-align: center;
-        /* padding-left: 4rem; */
+    }
+
+    .articuloPrincipal h2{
+        /* margin: 0px; */
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        width: auto;
+        /* min-width: 290px; */
+        /* padding: 0rem 3rem 0rem 3rem; */
     }
 
     .articuloPrincipal p{
-        /* margin: 1rem 0rem 1.25rem 0rem;
-        padding: 0rem 1rem 0rem 1rem; */
         min-width: 290px;
-        width: 30vw;
+        margin: 0px;
+        min-width: 290px;
+        width: 100vw;
         text-align: center;
+        padding: 0rem 0rem 0rem 6rem;
 
     }
     
