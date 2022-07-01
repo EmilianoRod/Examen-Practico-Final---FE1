@@ -408,20 +408,24 @@ footer{
     }
     
     .numeradores{
-        display: flex;
         align-items: center;
-        gap: 1.5em;
+        gap: 0rem;
+        padding: 3rem 2rem 0rem 2rem;
+        width: auto;
     }
     
     .lista{
+        max-width: 100vw;
         margin-left: 0rem;
         min-width: 290px;
-        max-width: 30vw;
+        width: 100%;
+        text-align: center;
+
     }
     
     .parrafonumerador{
-        padding-left: 0rem;
-        color: var(--azulGrisáceoOscuro);
+        padding: 0rem 1rem 0rem 1rem;
+        text-align: left;
     }
     
     .segundaSeccion{
@@ -441,6 +445,7 @@ footer{
         min-width: 290px;
         width: 100%;
         text-align: center;
+        margin-top: 3rem;
     }
 
     .articuloPrincipal h2{
@@ -449,18 +454,16 @@ footer{
         font-weight: 600;
         text-align: center;
         width: auto;
-        /* min-width: 290px; */
-        /* padding: 0rem 3rem 0rem 3rem; */
+        min-width: 290px;
+        padding: 0rem 3rem 0rem 3rem;
     }
 
-    .articuloPrincipal p{
+    .segundaSeccion .articuloPrincipal p{
         min-width: 290px;
-        margin: 0px;
-        min-width: 290px;
-        width: 100vw;
+        margin: 0rem 0rem 0rem 0rem;
+        width: auto;
         text-align: center;
-        padding: 0rem 0rem 0rem 6rem;
-
+        padding: 0rem 1.5rem 0rem 1.5rem;
     }
     
     .terceraSeccion{
@@ -470,8 +473,7 @@ footer{
     }
     
     .terceraSeccion h2{
-        text-align: center;
-    
+        font-size: 2rem;    
     }
     .terceraSeccion div{
         flex-direction: column;
@@ -480,46 +482,51 @@ footer{
         padding: 0rem 3rem 0rem 3rem;
     }
     
-    /* .cards{
+    .cards{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         background-color: #FAFAFA;
-    } */
-/*     
+        position: relative;
+    }
+  
     .cards img{
         width: 70px;
-        height: 70px;
-    } */
+        height: 70px;    
+        position: absolute; 
+        top: -2.5rem;
+    } 
     
-
-    /* .manage {
+/* 
+     .manage {
         text-align: left;
         font-size: 1.03rem;
-    } */
+    }  */
     
     .seccionNaranja{
-        height:  35rem;
+        height: 25rem;
         flex-direction: column;
-        align-items: center;
-        padding:  0rem 0rem 0rem 0rem;
-        max-width: 375px;
+        padding: 0rem 0rem 0rem 0rem;
+        width: 100vw;
     }
     
     .seccionNaranja h2{
-        line-height: 3rem;
-        letter-spacing: -0.005em;
         text-align: center;
         margin-top: 6rem;
-        width: 19rem;
+        width: auto;
         height: 6rem;
+        font-weight: 500;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+
+    .seccionNaranja button{
+        margin-bottom: 5rem;
     }
 
     .buttonCards{
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
+        margin: 2rem 0rem 2rem 0rem;
+        align-items: center;
     }
 
     footer{
@@ -527,9 +534,8 @@ footer{
         /* justify-content: space-around; */
         height: 32rem;
         padding: 0rem 0rem 0rem 0rem;
-        max-width: 375px;
         justify-content: center;
-
+        width: 100vw;
     }
     
     .logoyRedes{
